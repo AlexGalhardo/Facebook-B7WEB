@@ -3,14 +3,14 @@ class gruposController extends controller {
 
     public function __construct() {
         parent::__construct();
-        $u = new usuarios();
+        $u = new Usuarios();
         $u->verificarLogin();
  	}
 
  	public function abrir($id_grupo) {
- 		$u = new usuarios();
-        $g = new grupos();
-        $p = new posts();
+ 		$u = new Usuarios();
+        $g = new Grupos();
+        $p = new Posts();
 
         $dados = array(
         	'usuario_nome' => ''

@@ -1,5 +1,5 @@
 <?php
-class relacionamentos extends model {
+class Relacionamentos extends model {
 
 	public function addFriend($id1, $id2) {
 

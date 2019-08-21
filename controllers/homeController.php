@@ -3,15 +3,15 @@ class homeController extends controller {
 
     public function __construct() {
         parent::__construct();
-        $u = new usuarios();
+        $u = new Usuarios();
         $u->verificarLogin();
     }
 
     public function index() {
-        $u = new usuarios();
-        $p = new posts();
-        $r = new relacionamentos();
-        $g = new grupos();
+        $u = new Usuarios();
+        $p = new Posts();
+        $r = new Relacionamentos();
+        $g = new Grupos();
 
         $dados = array(
         	'usuario_nome' => ''

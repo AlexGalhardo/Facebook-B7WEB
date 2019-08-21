@@ -1,5 +1,5 @@
 <?php
-class posts extends model {
+class Posts extends model {
 
 	public function addPost($msg, $foto, $id_grupo = '0') {
 		$usuario = $_SESSION['lgsocial'];
@@ -33,7 +33,7 @@ class posts extends model {
 	public function getFeed($id_grupo = '0') {
 		$array = array();
 
-		$r = new relacionamentos();
+		$r = new Relacionamentos();
 		$ids = $r->getIdsFriends($_SESSION['lgsocial']);
 		$ids[] = $_SESSION['lgsocial'];
 
