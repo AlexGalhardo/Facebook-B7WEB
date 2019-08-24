@@ -3,7 +3,7 @@ class ajaxController extends controller {
 
     public function __construct() {
         parent::__construct();
-        $u = new usuarios();
+        $u = new Usuarios();
         $u->verificarLogin();
     }
 
@@ -48,6 +48,7 @@ class ajaxController extends controller {
     }
 
     public function comentar() {
+
         if(isset($_POST['id']) && !empty($_POST['id'])) {
             $id = addslashes($_POST['id']);
             $id_usuario = $_SESSION['lgsocial'];

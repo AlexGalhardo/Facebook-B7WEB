@@ -66,7 +66,7 @@ function comentar(obj) {
 
 	$.ajax({
 		type:'POST',
-		url:'ajax/comentar',
+		url: 'http://localhost/facebook/ajax/comentar',
 		data:{id:id, txt:txt}
 	});
 }

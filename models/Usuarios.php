@@ -28,6 +28,7 @@ class usuarios extends model {
 
 	}
 
+    /** antigo, com sexo e sem confima senha
 	public function cadastrar($nome, $email, $senha, $sexo) {
 
 		$sql = "SELECT * FROM usuarios WHERE email = '$email'";
@@ -44,6 +45,33 @@ class usuarios extends model {
 			header("Location: ".BASE);
 
 		} else {
+			return "E-mail já está cadastrado!";
+		}
+
+	}
+	**/
+
+	public function cadastrar($nome, $email, $senha, $confirmaSenha) {
+
+		$sql = "SELECT * FROM usuarios WHERE email = '$email'";
+		$sql = $this->db->query($sql);
+
+		$password = $senha;
+		$confirmPassword = $confirmaSenha;
+
+        if ($password != $confirmPassword) {
+        	return "Senhas não são iguais!";
+        } elseif($sql->rowCount() == 0) {
+
+			$sql = "INSERT INTO usuarios SET nome = '$nome', email = '$email', senha = MD5('$senha')";
+			$sql = $this->db->query($sql);
+
+			$id = $this->db->lastInsertId();
+			$_SESSION['lgsocial'] = $id;
+
+			header("Location: ".BASE);
+		} 
+		else {
 			return "E-mail já está cadastrado!";
 		}
 

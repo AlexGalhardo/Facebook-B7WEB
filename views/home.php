@@ -1,4 +1,6 @@
 <div class="row">
+
+	<!-- postagens -->
 	<div class="col-sm-8">
 
 		<div class="post_area">
@@ -17,6 +19,7 @@
 			?>
 		</div>
 	</div>
+
 	<div class="col-sm-4">
 		<?php if(count($requisicoes) > 0): ?>
 		<div class="widget">

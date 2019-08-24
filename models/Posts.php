@@ -82,21 +82,8 @@ class Posts extends model {
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	public function getComentario(){
+		
+	}
 
 }
