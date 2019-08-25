@@ -3,7 +3,7 @@ require 'environment.php';
 
 // define("BASE", "http://localhost/facebook/");
 define("BASE", "https://galhardo-social.herokuapp.com/")
-$config = array();
+global $config = array();
 
 if(ENVIRONMENT == 'production') {
 	$config['dbname'] = 'heroku_33ab81938761b04';
