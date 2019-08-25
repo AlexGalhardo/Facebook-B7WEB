@@ -4,13 +4,6 @@ require 'environment.php';
 // define("BASE", "http://localhost/facebook/");
 define("BASE", "https://galhardo-social.herokuapp.com/")
 
-public function test()
-{           
-    global $config;
-}
-
-// global $config;
-
 $config = array();
 
 if(ENVIRONMENT == 'production') {
