@@ -3,7 +3,7 @@
 
 // define("BASE", "http://localhost/facebook/");
 define("BASE", "https://galhardo-social.herokuapp.com/")
-global $config = array();
+$config = array();
 $config['dbname'] = 'heroku_33ab81938761b04';
 $config['host'] = 'us-cdbr-iron-east-02.cleardb.net';
 $config['dbuser'] = 'b305111783c034';
