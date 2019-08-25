@@ -2,7 +2,7 @@
 require 'environment.php';
 
 // define("BASE", "http://localhost/facebook/");
-define("BASE", "https://galhardo-social.herokuapp.com/")
+define("BASE", "https://social.alexgalhardo.com/")
 
 global $config;
 $config = array();
@@ -18,3 +18,6 @@ if(ENVIRONMENT == 'production') {
 	$config['dbpass'] = 'root';
 }
 ?>
+
+
+
