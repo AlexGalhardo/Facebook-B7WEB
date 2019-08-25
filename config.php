@@ -2,7 +2,7 @@
 require 'environment.php';
 
 // define("BASE", "http://localhost/facebook/");
-define("BASE", "https://social.alexgalhardo.com/")
+define("BASE", "https://galhardo-social.herokuapp.com/")
 
 global $config;
 $config = array();
