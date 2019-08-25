@@ -4,10 +4,9 @@ require 'environment.php';
 // define("BASE", "http://localhost/facebook/");
 define("BASE", "http://social-alexgalhardo-com.umbler.net/")
 
-$config;
-$config = array();
 
 if(ENVIRONMENT == 'production') {
+	$config = array();
 	$config['dbname'] = 'galhardosocial';
 	$config['host'] = 'mysql873.umbler.com';
 	$config['dbuser'] = 'alexgalhardo';
