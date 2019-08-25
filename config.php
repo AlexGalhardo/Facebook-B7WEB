@@ -4,8 +4,15 @@ require 'environment.php';
 // define("BASE", "http://localhost/facebook/");
 define("BASE", "https://galhardo-social.herokuapp.com/")
 
-global $config;
+public function test()
+{           
+    global $config;
+}
+
+// global $config;
+
 $config = array();
+
 if(ENVIRONMENT == 'production') {
 	$config['dbname'] = 'heroku_33ab81938761b04';
 	$config['host'] = 'us-cdbr-iron-east-02.cleardb.net';
