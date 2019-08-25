@@ -3,7 +3,7 @@
         <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Facebook</title>
+	    <title>🦅 Galhardo Social</title>
 	    <link href="<?php echo BASE; ?>assets/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="<?php echo BASE; ?>assets/css/template.css" rel="stylesheet">
 	    <script type="text/javascript" src="<?php echo BASE; ?>assets/js/jquery.min.js"></script>
